@@ -8,7 +8,25 @@ app = Flask(  # Create a flask app
 )
 
 # Your code should be below
+@app.route('/')
+def home():
+    return render_template('home.html')
 
+@app.route('/product')
+def prd():
+    return render_template('product.html')
+
+@app.route('/product2')
+def cart():
+    return render_template('cart.html')
+
+@app.route('/product3')
+def cart():
+    return render_template('cart.html')
+
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
 
 
 
