@@ -12,17 +12,17 @@ app = Flask(  # Create a flask app
 def home():
     return render_template('home.html')
 
-@app.route('/product')
-def prd():
+@app.route('/product1')
+def p1():
     return render_template('product.html')
 
 @app.route('/product2')
-def cart():
-    return render_template('cart.html')
+def p2():
+    return render_template('product2.html')
 
 @app.route('/product3')
-def cart():
-    return render_template('cart.html')
+def p3():
+    return render_template('product3.html')
 
 @app.route('/cart')
 def cart():
